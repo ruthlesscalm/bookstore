@@ -10,23 +10,42 @@
 
 <body class="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white">
 
-    <header class="bg-slate-800 border-b-2 border-slate-700 flex justify-between items-center px-10 py-5">
+    <header
+        class="bg-slate-800 border-b-2 border-slate-700 flex justify-between items-center px-[clamp(20px,3vw,50px)] py-[clamp(8px,0.625vw,15px)]">
+
         <div class="flex">
-            <h1 class="text-[24px] font-semibold text-orange-500">Book Store</h1>
+            <h1 class="text-[clamp(1.25rem,1.25rem+1.25vw,3.5rem)] font-semibold text-orange-500">Book Store</h1>
         </div>
-        <form action="/search" method="get" class="flex items-center relative max-md:hidden">
-            <label for="search" class="sr-only">Search for books</label>
-            <input type="text" name="search" id="search" placeholder="What do you want to Read?" class="border-2 border-slate-600 pl-5 pr-15 py-2.5 w-[20vw] rounded-full bg-slate-700 text-[0.94vw] outline-0 focus-visible:outline-2 focus-visible:outline-orange-500">
-            <button type="submit" class="absolute top-[50%] -translate-y-[50%] right-[calc(60px/2-24px/2)]">
-                <img src="/assets/images/search.svg" alt="" aria-hidden="true" class="h-6">
-            </button>
-        </form>
-        <nav class="max-md:hidden">
+        <div class="flex gap-4 items-center">
+            <form action="/search" method="get" class="flex items-center relative max-sm:hidden">
+                <label for="search" class="sr-only">Search for books</label>
+                <input type="text" name="search" id="search" placeholder="What do you want to Read?"
+                    class="border-2 border-slate-600 pl-[4.2%] pr-[12.5%] py-[2%] w-[clamp(250px,25vw,900px)] rounded-full bg-slate-700 text-[clamp(0.875rem,0.5rem+0.625vw,2rem)] outline-0 focus-visible:outline-2 focus-visible:outline-orange-500">
+                <button type="submit"
+                    class="absolute top-[50%] -translate-y-[50%] right-[calc(3.125vw/2-1.25vw/4)] max-lg:right-3.25">
+                    <img src="/assets/images/search.svg" alt="" aria-hidden="true" class="h-[clamp(16px,1.25vw,28px)]">
+                </button>
+            </form>
+            <div class="lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </div>
+        </div>
+        <nav class="max-lg:hidden">
             <ul class="flex gap-8 items-center">
-                <li><a href="/" class="text-[20px] hover:text-orange-500">Home</a></li>
-                <li><a href="/about" class="text-[1.05vw] hover:text-orange-500">About</a></li>
-                <li><a href="/upload" class="text-[1.05vw] hover:text-orange-500">Upload</a></li>
-                <li><button class="text-[20px] bg-orange-600 hover:bg-orange-700 px-4 py-2 font-medium rounded-sm cursor-pointer">Login</button></li>
+                <li><a href="/" class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Home</a>
+                </li>
+                <li><a href="/about"
+                        class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">About</a></li>
+                <li><a href="/upload"
+                        class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Upload</a></li>
+                <li><button
+                        class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] bg-orange-600 hover:bg-orange-700 px-[0.964em] py-[0.4em] font-medium rounded-sm cursor-pointer">Login</button>
+                </li>
             </ul>
         </nav>
     </header>
