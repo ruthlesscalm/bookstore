@@ -1,1 +1,26 @@
+@import "../public/css/font.css";
 @import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-space {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+  }
+
+  .font-manrope {
+    font-family: "Man Rope", system-ui, sans-serif;
+  }
+
+  .font-lexend {
+    font-family: "Lexend", system-ui, sans-serif;
+  }
+
+  .font-plex {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+  }
+}
