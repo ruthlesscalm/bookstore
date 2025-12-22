@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white flex flex-col m-0">
-   <header
+    <header
         class="bg-slate-800 border-b-2 border-slate-700 flex justify-between items-center px-[clamp(20px,3vw,50px)] py-[clamp(8px,0.625vw,15px)]">
 
         <div class="flex">
@@ -20,39 +20,44 @@
             <label for="search" class="sr-only">Search for books</label>
             <input type="text" name="search" id="search" placeholder="What do you want to Read?"
                 class="border-2 border-slate-600 pl-[4.2%] pr-[12.5%] py-[2.25%] w-[clamp(280px,25vw,900px)] rounded-full bg-slate-700 text-[clamp(0.9375rem,0.5rem+0.625vw,2rem)] outline-0 focus-visible:outline-2 focus-visible:outline-orange-500">
-            <button type="submit"
+            <button type="submit" aria-label="search"
                 class="absolute top-[50%] -translate-y-[50%] right-[calc(3.125vw/2-1.25vw/4)] max-lg:right-3.25">
                 <img src="/assets/images/search.svg" alt="" aria-hidden="true" class="h-[clamp(16px,1.25vw,28px)]">
             </button>
         </form>
 
-        <nav class="max-lg:hidden">
+        <nav class="max-lg:hidden" aria-label="Primary navigation">
             <ul class="flex gap-8 items-center">
-                <li><a href="/" class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Home</a>
+                <li><a href="/" aria-current="page"
+                        class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Home</a>
                 </li>
-                <li><a href="/about"
+                <li><a href="/about" aria-current="page"
                         class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">About</a></li>
-                <li><a href="/upload"
+                <li><a href="/upload" aria-current="page"
                         class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Upload</a></li>
                 <li><button
                         class="loginBtn text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] bg-orange-600 hover:bg-orange-700 px-[0.964em] py-[0.4em] font-medium rounded-sm cursor-pointer transition-colors">Login</button>
                 </li>
             </ul>
         </nav>
-        <div class="lg:hidden cursor-pointer" id="openBtn">
+        <button id="openBtn" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false"
+            class="lg:hidden block cursor-pointer bg-transparent border-0 p-0 text-inherit">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8">
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" aria-hidden="true">
                 <line x1="3" y1="6" x2="21" y2="6" />
                 <line x1="3" y1="12" x2="21" y2="12" />
                 <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
-        </div>
+        </button>
+
     </header>
 
-    <div id="mobileMenu" class="fixed inset-0 z-50 hidden bg-slate-900/80 backdrop-blur-sm">
+    <div id="mobileMenu" class="fixed inset-0 z-50 hidden bg-slate-900/80 backdrop-blur-sm" role="dialog"
+        aria-modal="true" aria-labelledby="mobile-menu-title">
         <div class="absolute right-0 top-0 h-full w-[85%] max-w-sm bg-slate-800 p-6">
+            <h2 id="mobile-menu-title" class="sr-only">Mobile Navigation</h2>
 
-            <button id="closeBtn" class="mb-6 text-2xl cursor-pointer">
+            <button id="closeBtn" class="mb-6 text-2xl cursor-pointer" aria-label="close menu">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2.5" stroke-linecap="round" class="h-6 w-6" aria-hidden="true">
                     <line x1="5" y1="5" x2="19" y2="19" />
@@ -62,18 +67,19 @@
             </button>
 
             <form action="/search" method="get" class="mb-8">
-                <label for="search" class="sr-only">Search for books</label>
-                <input type="text" id="search" placeholder="Search books…"
+                <label for="search-mobile" class="sr-only">Search for books</label>
+                <input type="text" id="search-mobile" placeholder="Search books…"
                     class="w-full px-4 py-3 rounded-lg bg-slate-700 outline-none focus:ring-2 focus:ring-orange-500" />
             </form>
 
-            <nav>
+            <nav aria-label="Mobile navigation">
                 <ul class="flex flex-col gap-6 text-lg">
-                    <li><a href="/" class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Home</a>
+                    <li><a href="/" aria-current="page"
+                            class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Home</a>
                     </li>
-                    <li><a href="/about"
+                    <li><a href="/about" aria-current="page"
                             class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">About</a></li>
-                    <li><a href="/upload"
+                    <li><a href="/upload" aria-current="page"
                             class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Upload</a></li>
                     <li>
                         <button
@@ -88,7 +94,7 @@
     </div>
 
     <main class="grow">
-        <section id="about" class="max-w-7xl mx-auto px-4 py-16 mt-16 border-slate-700">
+        <section id="about" class="max-w-5xl w-[90%] mx-auto px-4 py-16 mt-16 border-slate-700">
             <h2 class="text-3xl font-bold mb-4">About BookStore</h2>
             <p class="text-slate-400 text-lg leading-relaxed max-w-2xl">
                 Welcome to BookStore, your gateway to endless literary adventures. We bring you a carefully curated
