@@ -35,11 +35,11 @@
 						class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Home</a>
 				</li>
 				<li>
-					<a href="/about" aria-current="page"
+					<a href="/about"
 						class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">About</a>
 				</li>
 				<li>
-					<a href="/upload" aria-current="page"
+					<a href="/upload"
 						class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Upload</a>
 				</li>
 				<li>
@@ -89,11 +89,11 @@
 							class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Home</a>
 					</li>
 					<li>
-						<a href="/about" aria-current="page"
+						<a href="/about"
 							class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">About</a>
 					</li>
 					<li>
-						<a href="/upload" aria-current="page"
+						<a href="/upload"
 							class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Upload</a>
 					</li>
 					<li>
@@ -123,14 +123,15 @@
 				Popular Books
 			</h3>
 			<div class="mask">
-				<div class="absolute left-20 top-1/2 -translate-y-1/2 z-10">
+				<div class="absolute left-20 max-xl:left-15 max-lg:left-10 top-1/2 -translate-y-1/2 z-10 max-sm:hidden">
 					<button class="btn-left cursor-pointer">
-						<img class="w-10" src="/assets/images/left-arrow.svg" alt="Scroll Left">
+						<img class="w-12 max-lg:w-10" src="/assets/images/left-arrow.svg" alt="Scroll Left">
 					</button>
 				</div>
-				<div class="absolute right-20 top-1/2 -translate-y-1/2 z-10">
+				<div
+					class="absolute right-20 max-xl:right-15 max-lg:right-10 top-1/2 -translate-y-1/2 z-10 max-sm:hidden">
 					<button class="btn-right cursor-pointer">
-						<img class="w-10" src="/assets/images/right-arrow.svg" alt="Scroll Right"
+						<img class="w-12 max-lg:w-10" src="/assets/images/right-arrow.svg" alt="Scroll Right"
 							aria-label="Scroll songs right" aria-controls="sad-songs-list">
 					</button>
 				</div>
@@ -142,19 +143,17 @@
 								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
 								aria-labelledby="book-title-1"
 								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
 								<div
 									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
 									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
 										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
 
-									<!-- Hover / Focus overlay -->
 									<div
 										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
+										<p
 											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
 											sample
-										</h4>
+										</p>
 
 										<p
 											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
@@ -163,7 +162,6 @@
 									</div>
 								</div>
 
-								<!-- Info -->
 								<div class="mt-2 px-4 pb-4 pt-2">
 									<h4 id="book-title-1"
 										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
@@ -198,556 +196,8 @@
 								</div>
 							</a>
 						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
 
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
 
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="shrink-0 w-48 max-sm:w-36">
-							<a href="#"
-								class="block bg-gray-700 rounded-lg group cursor-pointer transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-								aria-labelledby="book-title-1"
-								aria-describedby="book-author-1 book-price-1 book-rating-1">
-								<!-- Thumbnail -->
-								<div
-									class="relative overflow-hidden rounded-t-lg bg-slate-700 h-64 max-sm:h-48 shadow-lg group-hover:shadow-2xl group-focus-visible:shadow-2xl transition-all duration-300">
-									<img src="/assets/images/thumbnail.avif" alt="Book cover of sample"
-										class="w-full h-full object-cover group-hover:scale-110 group-focus-visible:scale-110 transition-transform duration-300" />
-
-									<!-- Hover / Focus overlay -->
-									<div
-										class="absolute inset-0 bg-black/0 group-hover:bg-black/60 group-focus-visible:bg-black/60 transition-all duration-300 flex flex-col justify-end items-center text-center px-3 py-4">
-										<h4
-											class="font-bold text-white opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.9rem,0.85rem+0.4vw,1.1rem)]">
-											sample
-										</h4>
-
-										<p
-											class="text-orange-400 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 text-[clamp(0.7rem,0.65rem+0.3vw,0.85rem)]">
-											sample
-										</p>
-									</div>
-								</div>
-
-								<!-- Info -->
-								<div class="mt-2 px-4 pb-4 pt-2">
-									<h4 id="book-title-1"
-										class="font-semibold text-white truncate text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-										sample
-									</h4>
-
-									<p id="book-author-1"
-										class="text-slate-400 truncate text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]">
-										sample
-									</p>
-
-									<div class="flex justify-between items-center mt-2">
-										<span id="book-price-1"
-											class="text-orange-500 font-bold text-[clamp(0.9rem,0.85rem+0.4vw,1rem)]">
-											$6
-										</span>
-
-										<div class="flex items-center gap-1">
-											<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"
-												aria-hidden="true">
-												<path
-													d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-											</svg>
-
-											<span id="book-rating-1"
-												class="text-yellow-400 font-semibold text-[clamp(0.75rem,0.7rem+0.3vw,0.85rem)]"
-												aria-label="Rating 9 out of 10">
-												9
-											</span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						
 					</ul>
 				</div>
 			</div>
