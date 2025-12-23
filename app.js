@@ -8,8 +8,8 @@ import connectDB from "./database/db.js";
 connectDB();
 
 const app = express();
-const PORT = 3000;
-const hostname = `0.0.0.0`;
+const PORT = process.env.PORT;
+const hostname = process.env.HOSTNAME;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const __rootDir = __dirname;
