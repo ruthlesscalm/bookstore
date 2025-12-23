@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import pagesRouter from './routes/pages.routes.js';
 import connectDB from "./database/db.js";
+import booksRouter from './routes/books.routes.js';
 
 
 const app = express();
@@ -21,6 +22,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.use(pagesRouter);
+app.use("/api/books", booksRouter);
 
 app.listen(PORT , hostname ,  () => {
     console.log(`Server running on ${PORT}`);
