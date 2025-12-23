@@ -25,7 +25,9 @@
     "sync": "browser-sync start --proxy \"http://localhost:3000\" --files \"public/css/**/*.css, public/js/**/*.js, views/**/*.html\" --no-open --inject-changes --no-notify"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.2"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.18",

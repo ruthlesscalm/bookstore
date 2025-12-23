@@ -1,7 +1,11 @@
+import "dotenv/config";
 import express from "express";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import uploadRouter from './routes/upload.js';
+import connectDB from "./database/db.js";
+
+connectDB();
 
 const app = express();
 const PORT = 3000;
