@@ -2,13 +2,25 @@ import Book from "../models/book.js";
 
 export const renderHome = async (req, res) => {
     try {
-        const fiction = await Book.find({genre: "fiction"}).limit(15);
-        const fantasy = await Book.find({genre: "fantasy"}).limit(15);
-        const mystery = await Book.find({genre: "mystery"}).limit(15);
-        const romance = await Book.find({genre: "romance"}).limit(15);
-        const genres = [fiction, fantasy, mystery, romance]
+        const genreNames = await Book.distinct("genre");
+        
+        const allGenres = await Promise.all(
+            genreNames.map(async(genre) => {
+                const books = await Book.find({genre: genre}).limit(15);
+                return {
+                    name: genre,
+                    books
+                }
+            })
+        )
+        const genres = allGenres.filter((v) => {
+            return v.books.length > 0;
+        })
+        
+        console.log(genres)
         res.render("index", { genres });
     } catch (error) {
+        console.log(error)
         res.status(500).send("Server error");
     }
 }
