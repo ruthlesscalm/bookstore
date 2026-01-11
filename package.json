@@ -1,18 +1,18 @@
 {
-  "name": "bookstore-api",
+  "name": "bookstore",
   "version": "1.0.0",
   "description": "",
   "keywords": [
     "Book",
     "Store"
   ],
-  "homepage": "https://github.com/ruthlesscalm/bookstore-api#readme",
+  "homepage": "https://github.com/ruthlesscalm/bookstore#readme",
   "bugs": {
-    "url": "https://github.com/ruthlesscalm/bookstore-api/issues"
+    "url": "https://github.com/ruthlesscalm/bookstore/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruthlesscalm/bookstore-api.git"
+    "url": "git+https://github.com/ruthlesscalm/bookstore.git"
   },
   "license": "ISC",
   "author": "Ruthless Calm",
