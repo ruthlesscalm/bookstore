@@ -1,4 +1,4 @@
-import Book from "../models/book.js";
+import Book from "../models/book.model.js";
 
 export const renderHome = async (req, res) => {
     try {
