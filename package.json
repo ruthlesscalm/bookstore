@@ -25,9 +25,11 @@
     "sync": "browser-sync start --proxy \"http://localhost:3000\" --files \"public/css/**/*.css, public/js/**/*.js, views/**/*.html\" --no-open --inject-changes --no-notify"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.0.2"
   },
   "devDependencies": {
