@@ -8,9 +8,13 @@ A server-rendered bookstore application built with Express, EJS, and MongoDB.
 * Server-side rendering using EJS
 * MongoDB for data storage
 * Express-based backend
+*  User registration and login
+* Password hashing with bcrypt
+* JWT-based authentication
 
 ## Note
 * No actual book content is stored, only book metadata.
+* Authentication was partially implemented as part of learning and experimentation. The project primarily focuses on bookstore CRUD functionality.
   
 ## Tech Stack
 
@@ -40,7 +44,7 @@ Create a `.env` file in the project root:
 
 ```env
 PORT=3000
-HOSTNAME=localhost
+HOST=localhost
 MONGODB_URI=<your-mongodb-connection-string>
 ```
 
