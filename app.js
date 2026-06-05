@@ -9,7 +9,7 @@ import authRouter from "./routes/auth.routes.js";
 
 const app = express();
 const PORT = process.env.PORT;
-const hostname = process.env.HOSTNAME;
+const hostname = process.env.HOST;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const __rootDir = __dirname;
